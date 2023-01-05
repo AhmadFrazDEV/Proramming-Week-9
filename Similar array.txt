@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int arr[100];
+    int n;
+bool similar(int n)
+{
+    bool sim = false;
+    if(n==7)
+    {
+        sim= true;
+        return sim;
+    }
+    else
+    {
+        sim=false;
+        return sim;
+    }
+}
+void input_array()
+{
+    
+    cout<<"Size of array...";
+    cin>>n;
+    cout<<"\n";
+    cout<<"Enter Elements.....";
+    cout<<"\n";
+    for(int i=0 ; i<n ; i++)
+    {
+        cin>>arr[i];
+    }
+
+}
+
+main()
+{
+    input_array();
+    if(similar(n))
+    {
+        cout<<"Boom";
+    }
+    else
+    {
+        cout<<"Not";
+    }
+    
+}

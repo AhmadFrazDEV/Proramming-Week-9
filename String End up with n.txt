@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+
+main()
+
+{
+	
+	string name;
+	cout<<"ENter your name...";
+	cin>>name;
+	char a=name.back();
+	if(a=='n')
+	{
+		cout<<"true";
+	}
+	else
+	{
+		cout<<"false";
+	}
+		
+}

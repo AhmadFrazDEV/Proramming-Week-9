@@ -1,0 +1,16 @@
+#include<iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+main()
+
+{
+	string arr;
+	cout<<"Enter the arrays elements....";
+	cin>>arr;
+	reverse(arr.begin() , arr.end());
+	cout<<arr;
+		
+}

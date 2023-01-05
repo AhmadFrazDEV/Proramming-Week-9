@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+bool same(int i , int num)
+{
+	if(i==num)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+main()
+{
+ 
+	int num[3]={34,45,75};
+	int x;
+	cout<<"Enter a number...";
+	cin>>x;
+	for(int i=0; i < 3 ; i++)
+	
+	{
+		if(same(x , num[i]))
+		{
+			cout<<"Exist"<<endl;
+			break;
+		}
+		else
+		{
+			cout<<"not Exist"<<endl;
+			break;
+		}
+	}
+ 
+}

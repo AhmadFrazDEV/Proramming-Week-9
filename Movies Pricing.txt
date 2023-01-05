@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+// back() this function is use to get the last character of string
+
+
+main()
+{
+int price=500;
+float dis , t_p;
+   string movies[5]= {"Avengers" , "DC" , "MArvel" , "Spider_man", "captian"};
+   for (int i = 0; i < 5; i++)
+   {
+	   cout<<"Enetr a movie you want to watch....";
+	   cin>>movies[i];
+	   if(i%2==0)
+	   {
+		   dis=price*10.0/100.0;
+		   t_p=price-dis;
+		   cout<<"Your total price is...."<<t_p<<endl;
+	   }
+	   else
+	   { 
+		   dis=price*5.0/100.0;
+		   t_p=price-dis;
+		   cout<<"Your total price is...."<<t_p<<endl;
+
+	   }
+   }
+   
+ 
+}

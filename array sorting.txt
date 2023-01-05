@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+main()
+{
+    int temp;
+    int n;
+    cout<<"Enter the numbers you want to sorted....";
+    cin>>n;
+    int arr[n];
+    cout<<"\n";
+    cout<<"Enter the numbers....";
+    cout<<"\n";
+    for(int i=0 ; i<n ; i++)
+    {
+        cin>>arr[i];
+    }
+
+    cout<<"\n";
+    cout<<"Original Data is...";
+    for(int i=0 ; i<n ; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\n";
+
+
+    for(int i=0 ; i<n-1 ; i++)
+    {
+        for(int j=i+1 ; j<n ; j++)
+        {
+            if(arr[j]>arr[i])
+            {
+                temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+            }
+            
+        }
+    }
+
+    cout<<"\n";
+
+    
+    cout<<"Data in Desending order....";
+
+    for(int i=0 ; i<n ; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\n";
+
+    cout<<"\n";
+
+    for(int i=0 ; i<n-1 ; i++)
+    {
+        for(int j=i+1 ; j<n ; j++)
+        {
+            if(arr[j]<arr[i])
+            {
+                temp=arr[j];
+                arr[j]=arr[i];
+                arr[i]=temp;
+            }
+        }
+    }
+    
+
+    cout<<"Data in Assending order....";
+
+    for(int i=0 ; i<n ; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<"\n";
+}

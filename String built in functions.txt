@@ -1,0 +1,60 @@
+===================================BASIC STRING BUILT IN FUNCTIONS===================================
+
+The preprocessor directry of these functions is   "#include<bit/stdc++.h>" 
+
+1)  string.length
+
+    This function is used to find the length of given string.
+	#include<iostream>
+	#include <bits/stdc++.h>
+	using namespace std;
+	main()
+	{
+		string arr;				
+		cout<<"Enter the arrays elements....";       //  Input : Ahmad
+		cin>>arr;				//  output : 5
+		int len=arr.length();
+		cout<<len;
+		
+	}
+
+2) string.back()
+
+  This function is used to find the last character of given string
+
+	#include<iostream>
+	#include <bits/stdc++.h>
+	using namespace std;
+	main()
+
+	{
+		string arr;                                        //  Input : Ahmad
+		cout<<"Enter the string....";       //   Output : d
+		cin>>arr;
+		char Lch=arr.back();
+		cout<<Lch;
+		
+	}
+
+3) reverse(string.begin() , string.end())
+ 
+   This function is used to reverse the string    
+
+						                             
+	#include<iostream>
+	#include <bits/stdc++.h>
+	using namespace std;
+	main()
+
+	{
+		string arr;				// Input : Pakistan
+		cout<<"Enter the string....";		// Output : natsikap
+		cin>>arr;
+		reverse(arr.begin(), arr.end());
+		cout<<arr;
+		
+	}
+
+
+
+

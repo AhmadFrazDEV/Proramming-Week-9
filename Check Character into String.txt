@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+bool find(string word , char ch)
+
+{
+	bool isFind=false;
+	for(int i=0 ; word[i]!='\0' ; i++)
+	{
+		if(word[i]==ch)
+		{
+			isFind= true;
+			break;
+		}
+		else
+		{
+			isFind= false;
+			break;
+		}
+	}
+
+	if(isFind=true)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+main()
+{
+	string word;
+	char ch;
+	cout<<"Enetr a statement....";
+	cin>>word;
+	cout<<"Enter a charcter you wnat to find....";
+	cin>>ch;
+	if(find(word , ch))
+	{
+		cout<<"Present";
+
+	}
+	else
+	{
+		cout<<"Not Present";
+	}
+
+}
+ 

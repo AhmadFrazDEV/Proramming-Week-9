@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+	string array_1,array_2;
+	int sizeofarray_1= array_1.length();
+	int sizeofarray_2= array_2.length();
+	
+int count_alphabet(string s)
+{
+	int count=0;
+	char ch;
+    cout<<"Enter a character you want to match...";
+    cin>>ch;
+    for(int i=0 ; s[i]!='\0' ; i++)
+    {
+    	if(s[i]==ch)
+    	{
+    		count++;
+		}
+	}
+	return count;
+
+}
+main()
+{
+	
+	 array_1;
+	cout<<"Enter the string...";
+	cin>>array_1;
+	array_2;
+	cout<<"Enter the second string...";
+	cin>>array_2;
+
+    
+    int s1 = count_alphabet(array_1);
+    int s2 = count_alphabet(array_2);
+    
+    int sum = s1 + s2;
+    cout<< "Total sum is...."<<sum;
+    
+}

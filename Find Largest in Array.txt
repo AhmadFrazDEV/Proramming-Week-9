@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+main()
+{
+
+   int ary[5];  //{3,4,2,1,5}
+   // for input of array
+   for(int i=0 ; i<5 ; i++)
+   {
+	   cout<<"Enter the number"<<" "<<i+1<<".....";
+	   cin>>ary[i];
+   }
+   // for largest number
+   for(int idx=1 ; idx<=5 ; idx++)
+   {
+	   if(ary[0]<ary[idx])
+	   {
+		   ary[0] = ary[idx];
+	   }
+	   cout<<"Largest number is...."<<ary[0];
+   }
+ 
+}
